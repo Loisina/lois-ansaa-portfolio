@@ -39,7 +39,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="py-8 z-10 font-serif">
+    <section id="home" class="py-8 z-10 font-serif">
       <div class="flex flex-col md:flex-row items-center max-w-6xl px-6 py-8 mx-auto">
         <div class="w-full md:w-1/2 py-8">
           <h1 class="text-purple-900 text-7xl font-semibold leading-none tracking-tighter">
@@ -53,7 +53,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="overflow-hidden bg-white py-8 sm:py-16">
+    <section id="about" class="overflow-hidden bg-white py-8 sm:py-16">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div class="lg:pr-8 lg:pt-4">
@@ -119,14 +119,64 @@
               </a>
             </div>
           </div>
-          <img id="my-image" src="/public/lois8.png" alt="Product screenshot" 
-          class="w-[24rem] max-w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[30rem] md:-ml-4 lg:-ml-0" 
-          width="1920" height="1080">
+          <div class="flex flex-col place-content-around ">
+          <iframe 
+            id="my-video"
+            src="https://www.youtube.com/embed/teh_1EKmMd4" 
+            title="My elevator pitch" 
+            class="w-[24rem] max-w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[30rem] md:-ml-4 lg:-ml-0" 
+            width="560" 
+            height="315" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+          <iframe 
+            id="my-video"
+            src="https://www.youtube.com/embed/oy55ipZm9U4" 
+            title="My elevator pitch" 
+            class="w-[24rem] max-w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[30rem] md:-ml-4 lg:-ml-0" 
+            width="560" 
+            height="315" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
+      <div class="bg-white w-full px-4 pt-16 pb-16" id="faq">
+        <h2 class="text-4xl font-bold text-center">Languages and Tools</h2>
+        <p class="pt-6 pb-8 text-base max-w-2xl text-center m-auto">
+          I develop APIs and backend systems using various programming languages, frameworks, and tools.I am excited to learn new tools and skills too though!
+        </p>
+        <div
+            class="mx-auto w-full max-w-4xl bg-white justify-center items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+            <a target="_blank" href="">
+                <img alt="" class="h-20  mx-auto" src="/public/node-js-svgrepo-com.svg">
+            </a>
+            <a target="_blank" href="">
+                <img alt="" class="h-20  mx-auto" src="/public/python-svgrepo-com.svg">
+            </a>
+            <a target="_blank" href="">
+                <img alt="" class="h-20  mx-auto" src="/public/javascript-fill-svgrepo-com.svg">
+            </a>
+            <a target="_blank" href="">
+                <img alt="" class="h-20  mx-auto" src="/public/postman-svgrepo-com.svg">
+            </a>
+            <a target="_blank" href="">
+                <img alt="" class="h-20  mx-auto" src="/public/sql-svgrepo-com.svg">
+            </a>
+            <a target="_blank" href="">
+                <img alt="" class="h-20  mx-auto" src="https://www.svgrepo.com/show/519278/slack.svg">
+                
+            </a>
+        </div>
+    </div>
     </section>
 
+    
     <!-- Projects Section -->
-<section class="flex flex-col justify-center max-w-6xl min-h-screen px-4 py-10 mx-auto sm:px-6">
+<section id="projects" class="flex flex-col justify-center max-w-6xl min-h-screen px-4 py-10 mx-auto sm:px-6">
   <div class="flex flex-wrap items-center justify-between mb-8">
       <h2 class="mr-10 text-4xl font-bold leading-none md:text-5xl">
           My Projects
